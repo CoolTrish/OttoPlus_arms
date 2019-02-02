@@ -4,7 +4,7 @@
 	"author": "TrishDavies,STEMbot.v",
 	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
 	"sort": 0,
-	"javascriptURL": "js/Otto+arms.js",
+	"javascriptURL": "js/OttoV.js",
 	"firmware": "1.0",
 	"extensionPort": 0,
 	"tags": "Otto,Ottobot,Ottoarms",
@@ -21,7 +21,7 @@
 				"loop": ""
 			}
 		],
-		
+
 		[
 			"w",
 			"Otto init :LegLeft Pin  %n LegRight Pin %n LeftFoot Pin %n RightFoot Pin %n LeftArm Pin %n RightArm Pin %n Noise Sensor Pin A%n  BuzzerPin %n SRF04 Trig %n SRF04 Echo %n",
@@ -35,7 +35,7 @@
 			"6",
 			"13",
 			"8",
-			"9", 
+			"9",
 			{
 				"setup": "",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
@@ -62,12 +62,12 @@
 		],
 		[
 			"w",
-			"Set Calibrate Left Leg: %n Right Leg %n Left Foot %n Right Foot %n" LeftArm %n RightArm %n, 
+			"Set Calibrate Left Leg: %n Right Leg %n Left Foot %n Right Foot %n" LeftArm %n RightArm %n,
 			"setTrim",
 			"0",
 			"0",
 			"0",
-			"0", 
+			"0",
 			"0",
 			"0",
 			{
@@ -84,7 +84,7 @@
 			"move",
 			"forward",
 			"normal",
-			"25", 
+			"25",
 			{
 				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
@@ -135,7 +135,7 @@
 				"loop": ""
 			}
 		],
-		
+
 		[
 			"w",
 			"Show Mouth: %d.mouth",
@@ -227,7 +227,7 @@
 		],
 		[
 			"w",
-			"serial write text  %s", 
+			"serial write text  %s",
 			"serialWrite", "hello",
 			{
 				"setup":"Serial.begin(115200);\n",
@@ -275,7 +275,7 @@
 		"animouth":["littleUuh","dreamMouth","adivinawi","waveMouth"],
 		"note":["C4","D4","E4","F4","G4","A4","B4","C5","D5","E5","F5","G5","A5","B5","C6","D6","E6","F6","G6","A6","B6"],
 		"beats":["_Half","_Quarter","_Eighth","_Whole","_Double"]
-		
+
 
 	},
 	"values": {
@@ -374,8 +374,8 @@
 			"C4":262,"D4":294,"E4":330,"F4":349,"G4":392,"A4":440,"B4":494,
 			"C5":523,"D5":587,"E5":659,"F5":698,"G5":784,"A5":880,"B5":988,
 			"C6":1047,"D6":1175,"E6":1319,"F6":1397,"G6":1568,"A6":1760,"B6":1976,
-			"_Half":500,"_Quarter":250,"_Eighth":125,"_Whole":1000,"_Double":2000	
-				
+			"_Half":500,"_Quarter":250,"_Eighth":125,"_Whole":1000,"_Double":2000
+
 	},
 
 
@@ -511,10 +511,10 @@
 			"forward":"en avant",
 			"backward":"en arrière",
 			"turn left":"tourne à gauche",
-			"turn right":"tourne à droite", 
+			"turn right":"tourne à droite",
 			"updown":"haut bas ",
 			"moonwalker left":"marche lunaire gauche",
-			"moonwalker right":"marche lunaire droite", 
+			"moonwalker right":"marche lunaire droite",
 			"swing":"balance",
 			"crusaito 1":"crusaito 1",
 			"crusaito 2":"crusaito 2",
@@ -887,10 +887,10 @@
 			"forward":"tiến",
 			"backward":"lùi",
 			"turn left":"rẽ trái",
-			"turn right":"rẽ phải", 
+			"turn right":"rẽ phải",
 			"updown":"lên xuống",
 			"moonwalker left":"đi không trọng lượng sang trái ",
-			"moonwalker right":"đi không trọng lượng sang phải ", 
+			"moonwalker right":"đi không trọng lượng sang phải ",
 			"swing":"lắc lư",
 			"crusaito 1":"kiểu crusaito 1",
 			"crusaito 2":"kiểu crusaito 2",
@@ -981,7 +981,7 @@
 			"_Eighth":" ",
 			"_Whole":" ",
 			"_Double":" "
-			}	
+			}
 
 	}
 
