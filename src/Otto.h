@@ -34,10 +34,10 @@
 #define PIN_Trigger 8
 #define PIN_Echo    9
 #define PIN_NoiseSensor 6 //Analog Pin 6
-///define Bluetooth in SoftwareSerial 
-#define BT_Rx   6  
-#define BT_Tx   7
-//define Max7219 pins 
+//define Bluetooth in SoftwareSerial
+//#define BT_Rx   6
+//#define BT_Tx   7
+//define Max7219 pins
 #define PIN_DIN    10   //max 7219
 #define PIN_CS     11
 #define PIN_CLK    12
@@ -47,7 +47,7 @@ class Otto
   public:
    // Otto() {init(HIP_L, HIP_R, FOOT_L, FOOT_R, ARM_L, ARM_R, true, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);}
     //-- Otto initialization
-    
+
     void init(int YL, int YR, int RL, int RR, int LA, int RA, bool load_calibration=true, int NoiseSensor=PIN_NoiseSensor, int Buzzer=PIN_Buzzer, int USTrigger=PIN_Trigger, int USEcho=PIN_Echo);
     void initMatrix(int MaxDin,int MaxCS,int MaxClk)
      {Max7219_Din=MaxDin;Max7219_Cs=MaxCS;Max7219_Clk=MaxClk;}
@@ -70,7 +70,7 @@ class Otto
     void home();
     bool getRestState();
     void setRestState(bool state);
-    
+
     //-- Predetermined Motion Functions
     void jump(float steps=1, int T = 2000);
 
@@ -96,12 +96,12 @@ class Otto
     //-- Battery
     double getBatteryLevel();
     double getBatteryVoltage();
-    
+
     //-- Mouth & Animations
     void putMouth(unsigned long int mouth,bool predefined = true);
     void putAnimationMouth(unsigned long int anim, int index);
     void clearMouth();
- 
+
     //-- Sounds
     void _tone (float noteFrequency, long noteDuration, int silentDuration);
     void _playNote(float noteFrequency, long noteDuration);
@@ -111,7 +111,7 @@ class Otto
     //-- Gestures
     void playGesture(int gesture);
 
- 
+
   private:
     int Max7219_Din = PIN_DIN;
     int Max7219_Cs = PIN_CS;
@@ -120,14 +120,14 @@ class Otto
     BatReader battery;
     Oscillator servo[6];
     US us;
-  
+
     int servo_pins[6];
     int servo_trim[6];
     int servo_position[6];
 
     int pinBuzzer;
     int pinNoiseSensor;
-    
+
     unsigned long final_time;
     unsigned long partial_time;
     float increment[6];
@@ -141,5 +141,3 @@ class Otto
 };
 
 #endif
-
-
