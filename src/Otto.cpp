@@ -60,12 +60,12 @@ void Otto::defaultInit() {
 //-- ATTACH & DETACH FUNCTIONS ----------------------------------//
 ///////////////////////////////////////////////////////////////////
 void Otto::attachServos(){
-    servo[0].attach(servo_pins[2]);
-    servo[1].attach(servo_pins[3]);
-    servo[2].attach(servo_pins[4]);
-    servo[3].attach(servo_pins[5]);
-    servo[4].attach(servo_pins[6]);
-    servo[5].attach(servo_pins[7]);
+    servo[0].attach(servo_pins[0]);
+    servo[1].attach(servo_pins[1]);
+    servo[2].attach(servo_pins[2]);
+    servo[3].attach(servo_pins[3]);
+    servo[4].attach(servo_pins[4]);
+    servo[5].attach(servo_pins[5]);
 }
 
 void Otto::detachServos(){
