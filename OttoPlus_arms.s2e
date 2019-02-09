@@ -2,7 +2,7 @@
 	"description": "Otto Arduino Extension",
 	"version": "1",
 	"author": "TrishDavies,STEMbot.v",
-	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
+	"homepage": "https://github.com/CoolTrish/OttoPlus_arms,
 	"sort": 0,
 	"javascriptURL": "js/OttoV.js",
 	"firmware": "1.0",
