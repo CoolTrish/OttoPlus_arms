@@ -24,7 +24,7 @@
 
 		[
 			"w",
-			"Otto init :LegLeft Pin  %n LegRight Pin %n LeftFoot Pin %n RightFoot Pin %n LeftArm Pin %n RightArm Pin %n Noise Sensor Pin A%n  BuzzerPin %n SRF04 Trig %n SRF04 Echo %n",
+			"Otto init : LegLeft Pin  %n LegRight Pin %n LeftFoot Pin %n RightFoot Pin %n LeftArm Pin %n RightArm Pin %n Noise Sensor Pin A%n  BuzzerPin %n SRF04 Trig %n SRF04 Echo %n",
 			"OttoInit",
 			"2",
 			"3",
