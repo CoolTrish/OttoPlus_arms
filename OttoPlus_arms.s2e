@@ -1,4 +1,4 @@
-{   "extensionName": "Otto+arms",
+{   "extensionName": "OttoPlusarms",
 	"description": "Otto Arduino Extension",
 	"version": "1",
 	"author": "TrishDavies,STEMbot.v",
@@ -7,7 +7,7 @@
 	"javascriptURL": "js/OttoV.js",
 	"firmware": "1.0",
 	"extensionPort": 0,
-	"tags": "Otto,Ottobot,Ottoarms",
+	"tags": "Otto,Ottobot,Ottodiy,Ottoarms",
 	"blockSpecs": [
 		[
 			"h",
